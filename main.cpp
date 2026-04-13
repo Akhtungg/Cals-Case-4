@@ -1,7 +1,3 @@
-// Оптимизация информационной модели с использованием кэширования
-// Дисциплина: CALS- и CASE-технологии
-// Вариант: №7 (кэширование часто используемых данных)
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -155,7 +151,6 @@ public:
             cout << "   Промахов: " << cacheMisses << endl;
             cout << "   Hit ratio: " << (cacheHits * 100.0 / (cacheHits + cacheMisses)) << "%" << endl;
             
-            // Теоретическая оценка
             cout << "\n📈 ТЕОРЕТИЧЕСКАЯ ОЦЕНКА:" << endl;
             cout << "   Без кэша:  " << ITERATIONS << " × " << users.size() 
                  << " = " << (long long)ITERATIONS * users.size() << " сравнений" << endl;
